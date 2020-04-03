@@ -24,6 +24,7 @@ module.exports = {
 
         return res.json(incidents);
     },
+
     async create(req, res) {
         const { title, description, value } = req.body;
 
@@ -38,6 +39,7 @@ module.exports = {
 
         return res.json({ id });
     },
+    
     async delete(req, res) {
         const { id } = req.params;
         const ong_id = req.headers.authorization;
